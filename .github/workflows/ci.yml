@@ -25,7 +25,7 @@ jobs:
       # 4. Lancer les tests (ici, juste vérifier que index.html existe)
       - name: Verify site
         run: |
-          if [ ! -f index.html ]; then
+          if [ ! -f index.html]; then
             echo "Error: index.html not found"
             exit 1
           fi
@@ -39,3 +39,4 @@ jobs:
       #   run: |
       #     docker tag hang_men yourdockerhubusername/hang_men:latest
       #     docker push yourdockerhubusername/hang_men:latest
+   

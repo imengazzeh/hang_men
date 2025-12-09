@@ -1,7 +1,7 @@
 // Liste de mots
 const WORDS = {
   easy: ['chat','chien','soleil','lune','pomme','arbre','bouche'],
-  medium: ['ordinateur','javascript','tunisie','université','paysage','montagne'],
+  medium: ['ordinateur','javascript','tunisie','universite','paysage','montagne'],
   hard: ['cryptographie','asynchronisme','microcontrôleur','algorithme','virtualisation']
 };
 
