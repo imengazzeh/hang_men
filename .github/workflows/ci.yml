@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Donnez la permission d'écriture pour la branche gh-pages
 
     steps:
       # 1. Cloner le dépôt
