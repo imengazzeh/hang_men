@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeu du Pendu (Hangman)</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Sons -->
+<audio id="audio-correct" src="bg.mp3"></audio>
+<audio id="audio-wrong" src="wrong.wav"></audio>
+<audio id="audio-win" src="win.wav"></audio>
+<audio id="audio-lose" src="lose.wav"></audio>
+
+</head>
+<body>
+<main class="card">
+  <h1>Le Pendu</h1>
+
+  <div id="hangman-container">
+    <svg id="hangman" viewBox="0 0 120 140"></svg>
+  </div>
+
+  <div class="word" id="word"></div>
+
+  <div class="controls">
+    <div id="letters"></div>
+    <div class="info">
+      <p>Mauvaises tentatives: <span id="wrongCount">0</span> / <span id="maxWrong">6</span></p>
+      <p id="message"></p>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="newGame">Nouvelle partie</button>
+    <select id="difficulty">
+      <option value="easy">Facile</option>
+      <option value="medium" selected>Moyen</option>
+      <option value="hard">Difficile</option>
+    </select>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
